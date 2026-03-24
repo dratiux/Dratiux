@@ -1,0 +1,63 @@
+.login-card {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background-color: var(--surface-container);
+  border: 1px solid var(--outline);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.admin-header {
+  border-bottom: 1px solid var(--outline);
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.admin-card {
+  background-color: var(--surface-container);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.contacts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-md);
+}
+
+.contacts-table th, .contacts-table td {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--outline);
+}
+
+.contacts-table th {
+  font-family: var(--font-tech);
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
+}
+
+.form-actions {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}

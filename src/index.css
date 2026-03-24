@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* Colors - Monolith Architect */
+  --surface: #131313;
+  --surface-container: #202020;
+  --surface-container-high: #2a2a2a;
+  --surface-container-highest: #353535;
+  --primary: #ffffff;
+  --on-surface-variant: #c6c6c6;
+  --outline: #474747;
+
+  /* Typography */
+  --font-main: 'Manrope', sans-serif;
+  --font-tech: 'Inter', sans-serif;
+
+  /* Spacing */
+  --space-unit: 8px;
+  --space-xs: calc(var(--space-unit) * 1); /* 8px */
+  --space-sm: calc(var(--space-unit) * 2); /* 16px */
+  --space-md: calc(var(--space-unit) * 4); /* 32px */
+  --space-lg: calc(var(--space-unit) * 8); /* 64px */
+  --space-xl: calc(var(--space-unit) * 14); /* 112px / 7rem */
+  --space-2xl: calc(var(--space-unit) * 17); /* 136px / 8.5rem */
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--primary);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: var(--font-main);
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+input, textarea {
+  font-family: var(--font-main);
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+/* 0px Radius Global Constraint */
+* {
+  border-radius: 0 !important;
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.section-void {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.section-void-large {
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+}
+
+/* Typography Scale */
+.display-lg { font-size: 3.5rem; }
+.display-md { font-size: 2.5rem; }
+.title-lg { font-size: 1.5rem; }
+.body-lg { font-size: 1.125rem; }
+.label-sm { 
+  font-family: var(--font-tech); 
+  font-size: 0.75rem; 
+  text-transform: uppercase; 
+  letter-spacing: 0.1em;
+  color: var(--on-surface-variant);
+}

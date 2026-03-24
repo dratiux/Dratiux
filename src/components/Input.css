@@ -1,0 +1,29 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.input-label {
+  color: var(--on-surface-variant);
+}
+
+.input-field {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--outline);
+  padding: 0.75rem 0;
+  color: var(--primary);
+  font-size: 1rem;
+  transition: var(--transition-fast);
+}
+
+.input-field:focus {
+  outline: none;
+  border-bottom-color: var(--primary);
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,33 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: var(--transition-fast);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #1a1c1c;
+}
+
+.btn-primary:hover {
+  background-color: var(--on-surface-variant);
+}
+
+.btn-tertiary {
+  background: none;
+  color: var(--primary);
+  padding: 0;
+  border-bottom: 1px solid transparent;
+}
+
+.btn-tertiary:hover {
+  border-bottom-color: var(--primary);
+}

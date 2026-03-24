@@ -1,0 +1,33 @@
+.service-detail {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-xl);
+  border-top: 1px solid var(--outline);
+  padding-top: var(--space-lg);
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.service-points {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.point-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .service-detail {
+    grid-template-columns: 1fr;
+  }
+}
