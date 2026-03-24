@@ -1,16 +1,36 @@
-# React + Vite
+# ⎯⎯⎯⎯⎯⎯ DRATIUX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### VibeCoder & Graphic Designer
+#### THE MONOLITH ARCHITECT
+*Architecting precise digital experiences for the avant-garde.*
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ▣ Philosophy
+Design is not a coat of paint; it is the structural integrity of the experience. I build systems that prioritize **rigidity, clarity, and authority**. Every pixel is governed by mathematical precision and editorial logic.
 
-## React Compiler
+## ◢ Specializations
+- **Branding & Identity Sytems:** Crafting the visual DNA and structural integrity of elite brands.
+- **Advanced UI/UX Design:** Architecting high-contrast layouts and precise interfaces for the digital avant-garde.
+- **System Architecture:** Building scalable design languages with rigorous 0px roundedness and editorial logic.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⌬ Current Stack
+- **Frontend:** React, Next.js, Framer Motion, Vanilla CSS.
+- **Backend:** Supabase, PostgreSQL, Edge Functions.
+- **Visuals:** Architectural Layouts, Grid Systems, Generative Aesthetics.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ◹ Technical Logs
+- ▹ Building high-end architectural systems for global clients.
+- ▹ Developing `Monolith Architect` — a design language for the uncompromising.
+- ▹ Exploring the intersection of digital voids and structural typography.
+
+## ✉ Engagement
+For inquiries that demand precision and structural excellence:
+- **Email:** [dratiux@gmail.com](mailto:dratiux@gmail.com)
+- **Telegram:** [@dratiux](https://t.me/dratiux)
+- **WhatsApp:** [+20 108 056 8334](https://wa.me/201080568334)
+
+---
+*“Precision is the only truth.”*
