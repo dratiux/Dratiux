@@ -42,13 +42,24 @@
   margin-top: 0.2rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .services-list {
+    gap: var(--space-xl);
+    margin-top: var(--space-lg);
+  }
+  
   .service-detail {
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: var(--space-md);
+    padding-top: var(--space-lg);
   }
   
   .service-info {
     padding-right: 0;
+    gap: var(--space-sm);
+  }
+
+  .point-item {
+    gap: var(--space-sm);
   }
 }

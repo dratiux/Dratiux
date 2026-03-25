@@ -35,7 +35,25 @@
 }
 
 @media (max-width: 768px) {
+  .hero-content {
+    gap: var(--space-sm);
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions > * {
+    width: 100%;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .service-block {
+    padding: var(--space-sm) 0;
   }
 }

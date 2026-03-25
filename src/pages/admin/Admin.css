@@ -21,12 +21,78 @@
   margin-bottom: var(--space-lg);
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+}
+
+.add-card-trigger {
+  border: 1px dashed var(--outline) !important;
+  background: none !important;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-height: 180px;
+  transition: all var(--transition-short);
+}
+
+.add-card-trigger:hover {
+  border-color: var(--primary) !important;
+  background-color: var(--surface-container) !important;
+}
+
+.add-icon {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.admin-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.nav-group {
+  display: flex;
+  gap: var(--space-md);
+  border-right: 1px solid var(--outline);
+  padding-right: var(--space-lg);
+}
+
+.admin-nav-btn {
+  font-family: var(--font-tech);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--on-surface-variant);
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition-short);
+}
+
+.admin-nav-btn.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.action-group {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.logout-btn {
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+
+.logout-btn:hover {
+  opacity: 1;
+  color: #ffb4ab !important;
 }
 
 .admin-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--space-lg);
 }
 
@@ -36,28 +102,99 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  border: 1px solid transparent;
+  transition: border-color var(--transition-short);
+}
+
+.admin-card:hover {
+  border-color: var(--outline);
+}
+
+.admin-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.delete-icon-btn {
+  padding: 0;
+  min-width: unset;
+  opacity: 0.3;
+  margin-top: -5px;
+}
+
+.delete-icon-btn:hover {
+  opacity: 1;
+  color: #ffb4ab !important;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--outline);
 }
 
 .contacts-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: var(--space-md);
 }
 
 .contacts-table th, .contacts-table td {
   text-align: left;
-  padding: 0.75rem;
+  padding: 1rem;
   border-bottom: 1px solid var(--outline);
 }
 
 .contacts-table th {
+  background-color: var(--surface-container-high);
   font-family: var(--font-tech);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--on-surface-variant);
+  letter-spacing: 0.1em;
+}
+
+.delete-btn {
+  color: #ffb4ab !important;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
 }
 
 .form-actions {
   display: flex;
   gap: var(--space-md);
   margin-top: var(--space-md);
+  flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-lg);
+  }
+
+  .admin-controls {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .nav-group {
+    border-right: none;
+    border-bottom: 1px solid var(--outline);
+    padding-right: 0;
+    padding-bottom: var(--space-sm);
+    width: 100%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
