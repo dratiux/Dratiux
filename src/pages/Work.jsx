@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { supabase } from '../lib/supabase';
 import ProjectCard from '../components/ProjectCard';
 import './Work.css';
@@ -27,6 +28,16 @@ const Work = () => {
 
   return (
     <div className="work-page container section-void-large">
+      <Helmet>
+        <title>Work — Dratiux</title>
+        <meta name="description" content="Explore brand identity and interactive document projects by Dratiux, focused on clarity, structure, and execution quality." />
+        <meta property="og:title" content="Work — Dratiux" />
+        <meta property="og:description" content="Explore brand identity and interactive document projects by Dratiux, focused on clarity, structure, and execution quality." />
+        <meta name="twitter:title" content="Work — Dratiux" />
+        <meta name="twitter:description" content="Explore brand identity and interactive document projects by Dratiux, focused on clarity, structure, and execution quality." />
+        <link rel="canonical" href="https://dratiux.com/work" />
+      </Helmet>
+
       <header className="section-header">
         <span className="label-sm">Archive</span>
         <h1 className="display-lg">SELECTED WORKS</h1>

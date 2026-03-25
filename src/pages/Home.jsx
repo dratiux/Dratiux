@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { supabase } from '../lib/supabase';
 import Button from '../components/Button';
 import ProjectCard from '../components/ProjectCard';
@@ -22,16 +23,26 @@ const Home = () => {
 
   return (
     <div className="home-page">
+      <Helmet>
+        <title>Dratiux — Brand Identity & Interactive Document Designer</title>
+        <meta name="description" content="Dratiux is a design studio specializing in brand identity, UI/UX, and interactive document systems. Structured, precise, and scalable design solutions." />
+        <meta property="og:title" content="Dratiux — Brand Identity & Interactive Document Designer" />
+        <meta property="og:description" content="Dratiux is a design studio specializing in brand identity, UI/UX, and interactive document systems. Structured, precise, and scalable design solutions." />
+        <meta name="twitter:title" content="Dratiux — Brand Identity & Interactive Document Designer" />
+        <meta name="twitter:description" content="Dratiux is a design studio specializing in brand identity, UI/UX, and interactive document systems. Structured, precise, and scalable design solutions." />
+        <link rel="canonical" href="https://dratiux.com/" />
+      </Helmet>
+
       <section className="hero container section-void-large">
         <div className="hero-content">
-          <span className="label-sm">Creative Direction & Design</span>
-          <h1 className="display-lg">THE MONOLITH<br/>ARCHITECT</h1>
+          <span className="label-sm">Multidisciplinary Designer</span>
+          <h1 className="display-lg">JUST CREATE.<br /></h1>
           <p className="body-lg on-surface-variant max-w-600">
-            Crafting precise, uncompromising digital experiences for elite brands that demand architectural clarity and editorial sophistication.
+            I design digital products that are both beautiful and functional. I specialize in creating intuitive interfaces for complex systems, and I'm passionate about using design to solve real-world problems.
           </p>
           <div className="hero-actions">
-            <Button onClick={() => window.location.href='/work'}>View Portfolio</Button>
-            <Button variant="tertiary" onClick={() => window.location.href='/services'}>Our Services</Button>
+            <Button onClick={() => window.location.href = '/work'}>View Portfolio</Button>
+            <Button variant="tertiary" onClick={() => window.location.href = '/services'}>Our Services</Button>
           </div>
         </div>
       </section>
@@ -47,10 +58,6 @@ const Home = () => {
             <p className="on-surface-variant">Defining visual identities with structural integrity.</p>
           </div>
           <div className="service-block">
-            <h3 className="title-lg">UI/UX DESIGN</h3>
-            <p className="on-surface-variant">Architecting intuitive interfaces for complex systems.</p>
-          </div>
-          <div className="service-block">
             <h3 className="title-lg">INTERACTIVE PDF</h3>
             <p className="on-surface-variant">Editorial precision meets digital functionality.</p>
           </div>
@@ -63,7 +70,7 @@ const Home = () => {
             <span className="label-sm">Featured</span>
             <h2 className="display-md">PORTFOLIO</h2>
           </div>
-          <Button variant="tertiary" onClick={() => window.location.href='/work'}>View Archive</Button>
+          <Button variant="tertiary" onClick={() => window.location.href = '/work'}>View Archive</Button>
         </div>
         <div className="work-grid">
           {featuredProjects.map(project => (
@@ -71,11 +78,11 @@ const Home = () => {
           ))}
         </div>
       </section>
-      
+
       <section className="cta container section-void-large">
         <div className="cta-content">
           <h2 className="display-md">READY TO SYSTEMIZE?</h2>
-          <Button onClick={() => window.location.href='/contact'}>Start Project</Button>
+          <Button onClick={() => window.location.href = '/contact'}>Start Project</Button>
         </div>
       </section>
     </div>

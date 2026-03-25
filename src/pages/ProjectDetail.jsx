@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { supabase } from '../lib/supabase';
 import Button from '../components/Button';
 import './ProjectDetail.css';
@@ -31,8 +32,22 @@ const ProjectDetail = () => {
   if (loading) return <div className="loading-state container label-sm">Analyzing Project Architecture...</div>;
   if (!project) return <div className="container section-void label-sm">Project Not Found.</div>;
 
+  const pageTitle = `${project.title} — Dratiux`;
+  const pageDescription = project.short_summary || "Brand identity or interactive document project focused on usability and structured design.";
+
   return (
     <div className="project-detail">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        {project.cover_image && <meta property="og:image" content={project.cover_image} />}
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <link rel="canonical" href={`https://dratiux.com/work/${slug}`} />
+      </Helmet>
+
       <section className="project-hero">
         <img src={project.cover_image} alt={project.title} className="hero-img" />
         <div className="hero-overlay">

@@ -1,9 +1,20 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import './About.css';
 
 const About = () => {
   return (
     <div className="about-page container section-void-large">
+      <Helmet>
+        <title>About — Dratiux</title>
+        <meta name="description" content="Dratiux focuses on brand identity systems and interactive documents, combining structured design thinking with precise execution." />
+        <meta property="og:title" content="About — Dratiux" />
+        <meta property="og:description" content="Dratiux focuses on brand identity systems and interactive documents, combining structured design thinking with precise execution." />
+        <meta name="twitter:title" content="About — Dratiux" />
+        <meta name="twitter:description" content="Dratiux focuses on brand identity systems and interactive documents, combining structured design thinking with precise execution." />
+        <link rel="canonical" href="https://dratiux.com/about" />
+      </Helmet>
+
       <header className="section-header">
         <span className="label-sm">Philosophy</span>
         <h1 className="display-lg">ARCHITECTURAL<br/>THINKING</h1>

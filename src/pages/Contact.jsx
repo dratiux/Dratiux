@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { supabase } from '../lib/supabase';
 import Input from '../components/Input';
 import Button from '../components/Button';
@@ -31,6 +32,16 @@ const Contact = () => {
 
   return (
     <div className="contact-page container section-void-large">
+      <Helmet>
+        <title>Contact — Dratiux</title>
+        <meta name="description" content="Start your brand identity or interactive document project with Dratiux. Clear process, structured execution, precise results." />
+        <meta property="og:title" content="Contact — Dratiux" />
+        <meta property="og:description" content="Start your brand identity or interactive document project with Dratiux. Clear process, structured execution, precise results." />
+        <meta name="twitter:title" content="Contact — Dratiux" />
+        <meta name="twitter:description" content="Start your brand identity or interactive document project with Dratiux. Clear process, structured execution, precise results." />
+        <link rel="canonical" href="https://dratiux.com/contact" />
+      </Helmet>
+
       <div className="contact-layout">
         <div className="contact-info">
           <span className="label-sm">Engagement</span>

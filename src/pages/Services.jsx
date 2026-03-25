@@ -1,80 +1,70 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import './Services.css';
 
 const Services = () => {
   return (
     <div className="services-page container section-void-large">
+      <Helmet>
+        <title>Services — Dratiux</title>
+        <meta name="description" content="Brand identity design and interactive document systems including interactive PDFs, form logic, and structured visual systems." />
+        <meta property="og:title" content="Services — Dratiux" />
+        <meta property="og:description" content="Brand identity design and interactive document systems including interactive PDFs, form logic, and structured visual systems." />
+        <meta name="twitter:title" content="Services — Dratiux" />
+        <meta name="twitter:description" content="Brand identity design and interactive document systems including interactive PDFs, form logic, and structured visual systems." />
+        <link rel="canonical" href="https://dratiux.com/services" />
+      </Helmet>
+
       <header className="section-header">
         <span className="label-sm">Expertise</span>
-        <h1 className="display-lg">DESIGN<br/>SYSTEMS</h1>
+        <h1 className="display-lg">CORE SERVICES</h1>
       </header>
 
       <div className="services-list">
-        <section className="service-detail section-void">
+        <section className="service-detail">
           <div className="service-info">
-            <h2 className="display-md">BRANDING</h2>
+            <h2 className="display-md">BRAND IDENTITY</h2>
             <p className="body-lg on-surface-variant">
-              We define the visual DNA of brands through structural logic and architectural precision. Our branding is not just aesthetic—it is a system designed to endure.
+              We design structured visual identities built on logic, consistency, and scalability.
             </p>
           </div>
+          
           <div className="service-points">
             <div className="point-item">
-              <span className="label-sm">01</span>
+              <span className="bullet">■</span>
               <p>Visual Identity Systems</p>
             </div>
             <div className="point-item">
-              <span className="label-sm">02</span>
+              <span className="bullet">■</span>
               <p>Brand Architecture</p>
             </div>
             <div className="point-item">
-              <span className="label-sm">03</span>
+              <span className="bullet">■</span>
               <p>Style Guidelines</p>
             </div>
           </div>
         </section>
 
-        <section className="service-detail section-void">
+        <section className="service-detail">
           <div className="service-info">
-            <h2 className="display-md">UI/UX DESIGN</h2>
+            <h2 className="display-md">INTERACTIVE DOCUMENTS</h2>
             <p className="body-lg on-surface-variant">
-              Architecting high-performance digital interfaces for complex systems. We prioritize clarity, hierarchy, and precision in every pixel.
+              We build interactive document systems with logic, usability, and precise data handling.
             </p>
           </div>
+          
           <div className="service-points">
             <div className="point-item">
-              <span className="label-sm">04</span>
-              <p>Interface Systems</p>
+              <span className="bullet">■</span>
+              <p>Interactive PDFs</p>
             </div>
             <div className="point-item">
-              <span className="label-sm">05</span>
-              <p>User Flow Architecture</p>
+              <span className="bullet">■</span>
+              <p>Form Logic</p>
             </div>
             <div className="point-item">
-              <span className="label-sm">06</span>
-              <p>Prototyping</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="service-detail section-void">
-          <div className="service-info">
-            <h2 className="display-md">INTERACTIVE PDF</h2>
-            <p className="body-lg on-surface-variant">
-              Transforming traditional editorial layouts into dynamic digital documents. Precision typography meets digital accessibility.
-            </p>
-          </div>
-          <div className="service-points">
-            <div className="point-item">
-              <span className="label-sm">07</span>
-              <p>Digital Editorial</p>
-            </div>
-            <div className="point-item">
-              <span className="label-sm">08</span>
-              <p>Interactive Reports</p>
-            </div>
-            <div className="point-item">
-              <span className="label-sm">09</span>
-              <p>Sales Enablement</p>
+              <span className="bullet">■</span>
+              <p>Data Structuring</p>
             </div>
           </div>
         </section>
