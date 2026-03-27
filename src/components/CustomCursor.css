@@ -1,0 +1,36 @@
+/* Show custom cursor only for devices with a precise pointer (mouse) */
+@media (pointer: fine) {
+  body, 
+  a, 
+  button, 
+  [role="button"], 
+  input, 
+  textarea, 
+  select,
+  .app-shell,
+  main {
+    cursor: none !important;
+  }
+
+  .custom-cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    pointer-events: none; /* vital for clicking elements underneath */
+    z-index: 999999;
+    mix-blend-mode: difference;
+    will-change: transform, width, height;
+    display: block;
+  }
+}
+
+/* Hide custom cursor on touch devices */
+@media (pointer: coarse) {
+  .custom-cursor-dot {
+    display: none !important;
+  }
+}

@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-  /* Colors - Monolith Architect */
-  --surface: #131313;
-  --surface-container: #202020;
-  --surface-container-high: #2a2a2a;
-  --surface-container-highest: #353535;
-  --primary: #ffffff;
-  --on-surface-variant: #c6c6c6;
-  --outline: #474747;
+  /* Colors - Notion Light Mode (Default) */
+  --surface: #ffffff;
+  --surface-container: #f7f6f3;
+  --surface-container-high: #f1f0ee;
+  --surface-container-highest: #e9e8e6;
+  --primary: #37352f;
+  --on-surface-variant: rgba(55, 53, 47, 0.65);
+  --outline: rgba(55, 53, 47, 0.16);
 
   /* Typography */
   --font-main: 'Manrope', sans-serif;
@@ -28,6 +28,17 @@
   --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+[data-theme="dark"] {
+  /* Colors - Notion Dark Mode Inspiration */
+  --surface: #191919;
+  --surface-container: #202020;
+  --surface-container-high: #252525;
+  --surface-container-highest: #2b2b2b;
+  --primary: rgba(255, 255, 255, 0.81);
+  --on-surface-variant: rgba(255, 255, 255, 0.44);
+  --outline: rgba(255, 255, 255, 0.09);
+}
+
 /* Base Reset */
 * {
   margin: 0;
@@ -35,6 +46,28 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Firefox Scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--outline) var(--surface);
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-container-high);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--outline);
 }
 
 body {

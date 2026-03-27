@@ -16,41 +16,47 @@ const About = () => {
       </Helmet>
 
       <header className="section-header">
-        <span className="label-sm">Philosophy</span>
-        <h1 className="display-lg">ARCHITECTURAL<br/>THINKING</h1>
+        <span className="label-sm">Designer Portfolio</span>
+        <h1 className="display-lg">ABDULLAH K.</h1>
       </header>
 
       <div className="about-content section-void">
         <div className="about-main">
-          <p className="display-md">Precision is the heartbeat of our design philosophy.</p>
+          <p className="display-md">
+            The intersection of precision and creativity.
+          </p>
           <div className="about-blocks section-void">
             <div className="about-block">
-              <h3 className="title-lg">THE METHOD</h3>
               <p className="on-surface-variant body-lg">
-                We don't just "design" — we build systems. Every element is aligned to a rigid 8px grid, ensuring mathematical harmony and visual authority.
+                I am Abdullah Khaled, a multidisciplinary designer specializing in branding, high-end 3D abstract artistry, and functional interactive document systems. My design foundation was built on a deep passion for photography, which naturally evolved into a sophisticated mastery of visual narratives and spatial visualization.
               </p>
             </div>
             <div className="about-block">
-              <h3 className="title-lg">THE AESTHETIC</h3>
               <p className="on-surface-variant body-lg">
-                Monolith Architect is our signature language. No rounded corners. No gradients. No shadows. Only tonal layering and pure geometric form.
+                By bridging technical expertise in Blender and Photoshop with a keen eye for modern aesthetics, I create high-impact visual identities that resonate with clarity and purpose. Having collaborated with distinguished individuals and global enterprises, I am dedicated to pushing the boundaries of design, ensuring each project stands as a unique synthesis of current trends and timeless innovation.
               </p>
             </div>
           </div>
         </div>
-        
+
         <aside className="about-sidebar">
           <div className="sidebar-meta">
-            <span className="label-sm">Studio</span>
-            <p>Dratiux Digital</p>
+            <span className="label-sm">Expertise</span>
+            <ul className="principles-list">
+              <li>BRAND IDENTITY</li>
+              <li>3D ABSTRACT DESIGN</li>
+              <li>INTERACTIVE PDFS</li>
+              <li>PHOTOGRAPHY</li>
+            </ul>
           </div>
           <div className="sidebar-meta">
-            <span className="label-sm">Principles</span>
+            <span className="label-sm">Primary Tools</span>
             <ul className="principles-list">
-              <li>01. Rigidity</li>
-              <li>02. Clarity</li>
-              <li>03. Authority</li>
-              <li>04. Precision</li>
+              <li>AFFINITY</li>
+              <li>PHOTOSHOP</li>
+              <li>ILLUSTRATOR</li>
+              <li>INDESIGN</li>
+              <li>BLENDER</li>
             </ul>
           </div>
         </aside>

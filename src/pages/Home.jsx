@@ -24,21 +24,20 @@ const Home = () => {
   return (
     <div className="home-page">
       <Helmet>
-        <title>Dratiux — Brand Identity & Interactive Document Designer</title>
+        <title>Dratiux — JUST CREATE.</title>
         <meta name="description" content="Dratiux is a design studio specializing in brand identity, UI/UX, and interactive document systems. Structured, precise, and scalable design solutions." />
-        <meta property="og:title" content="Dratiux — Brand Identity & Interactive Document Designer" />
+        <meta property="og:title" content="Dratiux — JUST CREATE." />
         <meta property="og:description" content="Dratiux is a design studio specializing in brand identity, UI/UX, and interactive document systems. Structured, precise, and scalable design solutions." />
-        <meta name="twitter:title" content="Dratiux — Brand Identity & Interactive Document Designer" />
+        <meta name="twitter:title" content="Dratiux — JUST CREATE." />
         <meta name="twitter:description" content="Dratiux is a design studio specializing in brand identity, UI/UX, and interactive document systems. Structured, precise, and scalable design solutions." />
         <link rel="canonical" href="https://dratiux.com/" />
       </Helmet>
 
       <section className="hero container section-void-large">
         <div className="hero-content">
-          <span className="label-sm">Multidisciplinary Designer</span>
           <h1 className="display-lg">JUST CREATE.<br /></h1>
           <p className="body-lg on-surface-variant max-w-600">
-            I design digital products that are both beautiful and functional. I specialize in creating intuitive interfaces for complex systems, and I'm passionate about using design to solve real-world problems.
+            I help you achieve your goals, and through my vision and expertise, I ensure success for your brand identity.
           </p>
           <div className="hero-actions">
             <Button onClick={() => window.location.href = '/work'}>View Portfolio</Button>
@@ -48,9 +47,12 @@ const Home = () => {
       </section>
 
       <section className="services container section-void-large">
-        <div className="section-header">
-          <span className="label-sm">Expertise</span>
-          <h2 className="display-md">SERVICES</h2>
+        <div className="section-header split-header">
+          <div>
+            <span className="label-sm">Expertise</span>
+            <h2 className="display-md">SERVICES</h2>
+          </div>
+          <Button variant="tertiary" onClick={() => window.location.href = '/services'}>View Services</Button>
         </div>
         <div className="services-grid">
           <div className="service-block">
@@ -81,7 +83,8 @@ const Home = () => {
 
       <section className="cta container section-void-large">
         <div className="cta-content">
-          <h2 className="display-md">READY TO SYSTEMIZE?</h2>
+          <h2 className="display-md">READY TO START CREATING?</h2>
+          <p className="body-lg on-surface-variant">For design services, feel free to contact me.</p>
           <Button onClick={() => window.location.href = '/contact'}>Start Project</Button>
         </div>
       </section>
