@@ -11,6 +11,7 @@
   overflow: hidden;
   background-color: var(--surface-container);
   aspect-ratio: 16 / 10;
+  border-radius: var(--radius-lg);
 }
 
 .project-card-image img {

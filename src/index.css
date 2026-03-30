@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
 
 :root {
   /* Colors - Notion Light Mode (Default) */
@@ -11,7 +11,7 @@
   --outline: rgba(55, 53, 47, 0.16);
 
   /* Typography */
-  --font-main: 'Manrope', sans-serif;
+  --font-main: 'Alexandria', sans-serif;
   --font-tech: 'Inter', sans-serif;
 
   /* Spacing */
@@ -22,6 +22,13 @@
   --space-lg: calc(var(--space-unit) * 8); /* 64px */
   --space-xl: calc(var(--space-unit) * 14); /* 112px / 7rem */
   --space-2xl: calc(var(--space-unit) * 17); /* 136px / 8.5rem */
+
+  /* Border Radius for New Brand Identity */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
 
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,7 +70,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: var(--surface-container-high);
-  border-radius: 0;
+  border-radius: var(--radius-pill);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -101,6 +108,7 @@ button {
   border: none;
   background: none;
   color: inherit;
+  border-radius: var(--radius-pill);
 }
 
 input, textarea {
@@ -108,12 +116,9 @@ input, textarea {
   background: none;
   border: none;
   color: inherit;
+  border-radius: var(--radius-sm);
 }
 
-/* 0px Radius Global Constraint */
-* {
-  border-radius: 0 !important;
-}
 
 /* Layout Utilities */
 .container {
