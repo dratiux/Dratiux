@@ -94,7 +94,12 @@ const ProjectDetail = () => {
       <section className="project-nav container section-void-large">
         <div className="nav-split">
           <Link to="/work" className="label-sm hover-white">← Back to Archive</Link>
-          <Button onClick={() => window.location.href='/contact'}>Start Project</Button>
+          <div className="project-nav-actions">
+            {project.behance_url && (
+              <Button variant="secondary" onClick={() => window.open(project.behance_url, '_blank', 'noopener,noreferrer')}>More</Button>
+            )}
+            <Button onClick={() => window.location.href='/contact'}>Start Project</Button>
+          </div>
         </div>
       </section>
     </div>

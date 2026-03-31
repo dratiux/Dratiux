@@ -14,7 +14,8 @@ const Dashboard = () => {
     description: '',
     category: '',
     year: new Date().getFullYear(),
-    cover_image: ''
+    cover_image: '',
+    behance_url: ''
   });
 
   useEffect(() => {
@@ -34,7 +35,7 @@ const Dashboard = () => {
     if (!error) {
       setView('projects');
       fetchData();
-      setNewProject({ title: '', slug: '', description: '', category: '', year: new Date().getFullYear(), cover_image: '' });
+      setNewProject({ title: '', slug: '', description: '', category: '', year: new Date().getFullYear(), cover_image: '', behance_url: '' });
     } else {
       alert(error.message);
     }
@@ -130,6 +131,7 @@ const Dashboard = () => {
             <Input label="Year" type="number" value={newProject.year} onChange={e => setNewProject({...newProject, year: e.target.value})} />
           </div>
           <Input label="Cover Image URL" value={newProject.cover_image} onChange={e => setNewProject({...newProject, cover_image: e.target.value})} />
+          <Input label="Behance Project URL" value={newProject.behance_url || ''} onChange={e => setNewProject({...newProject, behance_url: e.target.value})} />
           <div className="input-group">
             <label className="input-label label-sm">Description</label>
             <textarea className="input-field" rows={4} value={newProject.description} onChange={e => setNewProject({...newProject, description: e.target.value})} />

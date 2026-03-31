@@ -18,6 +18,12 @@
   align-items: flex-end;
   padding-bottom: var(--space-xl);
   background: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0) 100%);
+  color: #ffffff;
+}
+
+.hero-overlay h1, 
+.hero-overlay .label-sm {
+  color: #ffffff;
 }
 
 .project-info-layout {
@@ -62,6 +68,12 @@
   color: white;
 }
 
+.project-nav-actions {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .project-hero {
     height: 60vh;
@@ -74,5 +86,22 @@
     border-left: none;
     border-top: 1px solid var(--outline);
     padding-top: var(--space-md);
+  }
+  .nav-split {
+    flex-direction: column-reverse;
+    gap: var(--space-lg);
+    align-items: stretch;
+  }
+  .nav-split > a {
+    text-align: center;
+    padding-top: var(--space-sm);
+  }
+  .project-nav-actions {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+  .project-nav-actions button {
+    width: 100%;
+    justify-content: center;
   }
 }
