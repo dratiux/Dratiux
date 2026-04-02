@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { ArrowUpRight } from 'lucide-react';
 import './Navbar.css';
-import { useTheme } from '../context/ThemeContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const { theme, toggleTheme } = useTheme();
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -38,16 +37,16 @@ const Navbar = () => {
 
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
           <Link to="/work" className={`nav-link ${location.pathname === '/work' ? 'active' : ''}`}>
-            WORK <span className="nav-arrow">→</span>
+            WORK <ArrowUpRight className="nav-arrow" size={20} />
           </Link>
           <Link to="/services" className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`}>
-            SERVICES <span className="nav-arrow">→</span>
+            SERVICES <ArrowUpRight className="nav-arrow" size={20} />
           </Link>
           <Link to="/about" className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}>
-            ABOUT <span className="nav-arrow">→</span>
+            ABOUT <ArrowUpRight className="nav-arrow" size={20} />
           </Link>
           <Link to="/contact" className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}>
-            CONTACT <span className="nav-arrow">→</span>
+            CONTACT <ArrowUpRight className="nav-arrow" size={20} />
           </Link>
         </div>
       </div>

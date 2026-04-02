@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { supabase } from '../lib/supabase';
 import Button from '../components/Button';
+import { ArrowUpRight } from 'lucide-react';
 import ProjectCard from '../components/ProjectCard';
 import './Home.css';
 
@@ -52,7 +53,14 @@ const Home = () => {
             <span className="label-sm">Expertise</span>
             <h2 className="display-md">SERVICES</h2>
           </div>
-          <Button variant="tertiary" onClick={() => window.location.href = '/services'}>View Services</Button>
+          <Button 
+            variant="tertiary" 
+            onClick={() => window.location.href = '/services'}
+            className="btn-responsive"
+          >
+            <span className="btn-text">View Services</span>
+            <ArrowUpRight size={24} className="btn-icon" />
+          </Button>
         </div>
         <div className="services-grid">
           <div className="service-block">
@@ -72,7 +80,14 @@ const Home = () => {
             <span className="label-sm">Featured</span>
             <h2 className="display-md">PORTFOLIO</h2>
           </div>
-          <Button variant="tertiary" onClick={() => window.location.href = '/work'}>View Archive</Button>
+          <Button 
+            variant="tertiary" 
+            onClick={() => window.location.href = '/work'}
+            className="btn-responsive"
+          >
+            <span className="btn-text">View Archive</span>
+            <ArrowUpRight size={24} className="btn-icon" />
+          </Button>
         </div>
         <div className="work-grid">
           {featuredProjects.map(project => (

@@ -47,6 +47,24 @@
   color: var(--on-surface);
 }
 
+.nav-arrow {
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+  transition: transform var(--transition-short) ease;
+}
+
+.nav-link:hover .nav-arrow {
+  transform: translate(3px, -3px);
+  opacity: 1;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -159,13 +177,12 @@
   }
 
   .nav-arrow {
-    font-size: 1.5rem;
-    opacity: 0.5;
-    transition: transform 0.3s ease;
+    opacity: 0.8;
+    transition: transform var(--transition-fast) ease;
   }
 
   .nav-link:hover .nav-arrow {
-    transform: translateX(10px);
+    transform: translate(5px, -5px);
     opacity: 1;
   }
 

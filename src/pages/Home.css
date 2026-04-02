@@ -40,6 +40,16 @@
   align-items: flex-end;
 }
 
+.btn-responsive {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.btn-icon {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .hero-content {
     gap: var(--space-sm);
@@ -61,6 +71,18 @@
 
   .service-block {
     padding: var(--space-sm) 0;
+  }
+
+  .btn-text {
+    display: none;
+  }
+
+  .btn-icon {
+    display: flex;
+  }
+
+  .split-header {
+    align-items: center;
   }
 }
 
